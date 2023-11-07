@@ -2,6 +2,7 @@ function App() {
 
   return (
     <>
+    Testing Typescript based React App.
     </>
   )
 }
