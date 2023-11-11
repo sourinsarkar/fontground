@@ -1,8 +1,10 @@
+import Nav_Webview from "./components/navigation/Nav_Webview"
+
 function App() {
 
   return (
     <>
-      Typescript OG
+      <Nav_Webview />
     </>
   )
 }
