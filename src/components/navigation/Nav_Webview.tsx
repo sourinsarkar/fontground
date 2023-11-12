@@ -9,25 +9,16 @@ import {
   AlignCenter,
   AlignRight,
   EditPencil,
-  //   Check,
+  Check,
 } from "iconoir-react/regular";
-// import Test from "./Test";
-
-import { IconoirProvider } from "iconoir-react";
+import CustomIconProp from "./CustomIconProp";
 
 function Nav_Webview() {
   return (
     <>
-      <IconoirProvider
-        iconProps={{
-          color: "#AAAAAA",
-          strokeWidth: 1,
-          width: "1.5em",
-          height: "1.5em",
-        }}
-      >
-        <EditPencil />
-      </IconoirProvider>
+      <CustomIconProp>
+        <Check />
+      </CustomIconProp>
       <div>
         <div>
           {/* Logo Section */}
