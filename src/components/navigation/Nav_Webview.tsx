@@ -9,30 +9,28 @@ import {
   AlignCenter,
   AlignRight,
   EditPencil,
-  Check,
 } from "iconoir-react/regular";
 import CustomIconProp from "./CustomIconProp";
 
 function Nav_Webview() {
   return (
     <>
-      <CustomIconProp>
-        <Check />
-      </CustomIconProp>
-      <div>
-        <div>
+      <div className="mx-1 bg-slate-300">
+        <div className="flex-generic">
           {/* Logo Section */}
           <div>
-            <div>
-              <div>
+            <div className="flex-generic">
+              <div className="flex-generic">
                 <img src={SourinIcon} alt="Sourin" height={24} width={24} />
                 <div>
-                  <NavArrowDown />
+                  <CustomIconProp>
+                    <NavArrowDown />
+                  </CustomIconProp>
                 </div>
               </div>
               <div>
                 <div>
-                  <p>Fontground</p>
+                  <p className="bg-amber-200">Fontground</p>
                 </div>
               </div>
             </div>
@@ -40,36 +38,52 @@ function Nav_Webview() {
 
           {/* Tools Section */}
           <div>
-            <div>
+            <div className="flex-generic ele-margin">
               <div>
-                <FillColor />
+                <CustomIconProp>
+                  <FillColor />
+                </CustomIconProp>
               </div>
               <div>
-                <Bold />
+                <CustomIconProp>
+                  <Bold />
+                </CustomIconProp>
               </div>
               <div>
-                <Italic />
+                <CustomIconProp>
+                  <Italic />
+                </CustomIconProp>
               </div>
               <div>
-                <Underline />
+                <CustomIconProp>
+                  <Underline />
+                </CustomIconProp>
               </div>
               <div>
-                <div>
-                  <p>Cormorant</p>
+                <div className="flex-generic">
+                  <p className="bg-amber-200">Cormorant</p>
                   <div>
-                    <NavArrowDown />
+                    <CustomIconProp>
+                      <NavArrowDown />
+                    </CustomIconProp>
                   </div>
                 </div>
               </div>
               <div> </div>
               <div>
-                <AlignLeft />
+                <CustomIconProp>
+                  <AlignLeft />
+                </CustomIconProp>
               </div>
               <div>
-                <AlignCenter />
+                <CustomIconProp>
+                  <AlignCenter />
+                </CustomIconProp>
               </div>
               <div>
-                <AlignRight />
+                <CustomIconProp>
+                  <AlignRight />
+                </CustomIconProp>
               </div>
             </div>
           </div>
@@ -77,9 +91,11 @@ function Nav_Webview() {
           {/* Customize Section */}
           <div>
             <div>
-              <div>
+              <div className="flex-generic">
                 <div>
-                  <EditPencil />
+                  <CustomIconProp>
+                    <EditPencil />
+                  </CustomIconProp>
                 </div>
                 <p>Customize</p>
               </div>

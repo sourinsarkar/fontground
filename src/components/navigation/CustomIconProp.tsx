@@ -7,9 +7,9 @@ function CustomIconProp({children}: { children: ReactNode }) {
     <IconoirProvider
       iconProps={{
         color: "#000",
-        strokeWidth: 1.5,
-        width: "1.5em",
-        height: "1.5em",
+        strokeWidth: 2,
+        width: "1em",
+        height: "1em",
       }}
     >
       {children}
