@@ -2,14 +2,14 @@ import { IconoirProvider } from "iconoir-react";
 
 type ReactNode = string | number | boolean | null | undefined | ReactElement | ReactFragment | ReactPortal;
 
-function CustomIconProp({children}: { children: ReactNode }) {
+function Nav_Icon_Prop({children}: { children: ReactNode }) {
   return (
     <IconoirProvider
       iconProps={{
         color: "#000",
         strokeWidth: 2,
-        width: "1em",
-        height: "1em",
+        width: "0.9em",
+        height: "0.9em",
       }}
     >
       {children}
@@ -17,4 +17,4 @@ function CustomIconProp({children}: { children: ReactNode }) {
   );
 }
 
-export default CustomIconProp
+export default Nav_Icon_Prop

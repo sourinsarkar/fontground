@@ -10,27 +10,27 @@ import {
   AlignRight,
   EditPencil,
 } from "iconoir-react/regular";
-import CustomIconProp from "./CustomIconProp";
+import Nav_Icon_Prop from "./Nav_Icon_Prop";
 
 function Nav_Webview() {
   return (
     <>
-      <div className="mx-1 bg-slate-300">
-        <div className="flex-generic">
+      <div className="m-2">
+        <div className="flex-generic p-2">
           {/* Logo Section */}
           <div>
             <div className="flex-generic">
               <div className="flex-generic">
                 <img src={SourinIcon} alt="Sourin" height={24} width={24} />
                 <div>
-                  <CustomIconProp>
+                  <Nav_Icon_Prop>
                     <NavArrowDown />
-                  </CustomIconProp>
+                  </Nav_Icon_Prop>
                 </div>
               </div>
               <div>
                 <div>
-                  <p className="bg-amber-200">Fontground</p>
+                  <p className="primary-font">Fontground</p>
                 </div>
               </div>
             </div>
@@ -39,51 +39,51 @@ function Nav_Webview() {
           {/* Tools Section */}
           <div>
             <div className="flex-generic ele-margin">
-              <div>
-                <CustomIconProp>
+              <div className="hover:bg-[#EEF0F2] rounded-full p-2.5" >
+                <Nav_Icon_Prop>
                   <FillColor />
-                </CustomIconProp>
+                </Nav_Icon_Prop>
               </div>
-              <div>
-                <CustomIconProp>
+              <div className="hover:bg-[#EEF0F2] rounded-full p-2.5" >
+                <Nav_Icon_Prop>
                   <Bold />
-                </CustomIconProp>
+                </Nav_Icon_Prop>
               </div>
-              <div>
-                <CustomIconProp>
+              <div className="hover:bg-[#EEF0F2] rounded-full p-2.5" >
+                <Nav_Icon_Prop>
                   <Italic />
-                </CustomIconProp>
+                </Nav_Icon_Prop>
               </div>
-              <div>
-                <CustomIconProp>
+              <div className="hover:bg-[#EEF0F2] rounded-full p-2.5" >
+                <Nav_Icon_Prop>
                   <Underline />
-                </CustomIconProp>
+                </Nav_Icon_Prop>
               </div>
-              <div>
+              <div className="p-4 rounded-2xl bg-[#E9F0FF] shadow-navDropdownShadow" >
                 <div className="flex-generic">
-                  <p className="bg-amber-200">Cormorant</p>
+                  <p className="primary-font">Cormorant</p>
                   <div>
-                    <CustomIconProp>
+                    <Nav_Icon_Prop>
                       <NavArrowDown />
-                    </CustomIconProp>
+                    </Nav_Icon_Prop>
                   </div>
                 </div>
               </div>
               <div> </div>
-              <div>
-                <CustomIconProp>
+              <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
+                <Nav_Icon_Prop>
                   <AlignLeft />
-                </CustomIconProp>
+                </Nav_Icon_Prop>
               </div>
-              <div>
-                <CustomIconProp>
+              <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
+                <Nav_Icon_Prop>
                   <AlignCenter />
-                </CustomIconProp>
+                </Nav_Icon_Prop>
               </div>
-              <div>
-                <CustomIconProp>
+              <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
+                <Nav_Icon_Prop>
                   <AlignRight />
-                </CustomIconProp>
+                </Nav_Icon_Prop>
               </div>
             </div>
           </div>
@@ -93,11 +93,11 @@ function Nav_Webview() {
             <div>
               <div className="flex-generic">
                 <div>
-                  <CustomIconProp>
+                  <Nav_Icon_Prop>
                     <EditPencil />
-                  </CustomIconProp>
+                  </Nav_Icon_Prop>
                 </div>
-                <p>Customize</p>
+                <p className="primary-font">Customize</p>
               </div>
             </div>
           </div>

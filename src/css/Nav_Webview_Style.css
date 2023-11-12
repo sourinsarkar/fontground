@@ -8,6 +8,6 @@
     }
 
     .ele-margin > * {
-        @apply mx-2.5;
+        @apply mx-1;
     }
 }
