@@ -2,8 +2,14 @@
     --primary-font: 'PlusJakartaSans-Variable';
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
+}
+
+body {
+    overflow:hidden;
 }
 
 @font-face {
@@ -28,8 +34,4 @@
 
 .primary-font {
     font-family: var(--primary-font);
-}
-
-.GroundHeight {
-    height: calc(100vh - 80px);
 }

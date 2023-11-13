@@ -17,7 +17,7 @@ import Nav_Icon_Prop from "./Nav_Icon_Prop";
 function Nav_Webview() {
   return (
     <>
-      <div className="m-2">
+      <div>
         <div className="flex-generic">
           {/* Logo Section */}
           <div className="w-1/5">

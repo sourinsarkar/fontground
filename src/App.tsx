@@ -1,12 +1,10 @@
-import Nav_Webview from "./components/navigation/Nav_Webview"
-import './App.css'
 import Ground from "./components/navigation/Ground"
+import './App.css'
 
 function App() {
 
   return (
     <>
-      <Nav_Webview />
       <Ground />
     </>
   )
