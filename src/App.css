@@ -2,6 +2,10 @@
     --primary-font: 'PlusJakartaSans-Variable';
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'PlusJakartaSans-Variable';
     src: url('./assets/fonts/PJS/PlusJakartaSans-Variable.woff2') format('woff2'),

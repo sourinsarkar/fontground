@@ -4,10 +4,10 @@
 
 @layer components {
     .flex-generic {
-        @apply flex justify-between items-center;
+        @apply flex justify-center items-center;
     }
 
     .ele-margin > * {
-        @apply mx-1;
+        @apply mx-0.5;
     }
 }
