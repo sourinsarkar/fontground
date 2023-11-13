@@ -1,9 +1,9 @@
 function Ground() {
     return (
         <>
-            <div>
+            <div className="bg-blue-200 GroundHeight">
                 {/* Background Area */}
-                <div>
+                <div className="bg-green-200">
                     {/* Text Area */}
                     <div>
                         <p>All the world's a stage, and all the men and women merely players.</p>
