@@ -12,7 +12,7 @@ import {
   Minus,
   Plus,
 } from "iconoir-react/regular";
-import Nav_Icon_Prop from "./Toolbar/ToolbarIcons";
+import ToolbarIcons from "../Toolbar/ToolbarIcons";
 
 function Nav_Webview() {
   return (
@@ -25,7 +25,7 @@ function Nav_Webview() {
               <div className="flex-generic">
                 <img src={SourinIcon} alt="Sourin" height={24} width={24} />
                 <div>
-                  <Nav_Icon_Prop><NavArrowDown /></Nav_Icon_Prop>
+                  <ToolbarIcons><NavArrowDown /></ToolbarIcons>
                 </div>
               </div>
               <div>
@@ -40,42 +40,42 @@ function Nav_Webview() {
           <div className="w-4/5">
             <div className="flex-generic ele-margin">
               <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                <Nav_Icon_Prop><FillColor /></Nav_Icon_Prop>
+                <ToolbarIcons><FillColor /></ToolbarIcons>
               </div>
               <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                <Nav_Icon_Prop><Bold /></Nav_Icon_Prop>
+                <ToolbarIcons><Bold /></ToolbarIcons>
               </div>
               <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                <Nav_Icon_Prop><Italic /></Nav_Icon_Prop>
+                <ToolbarIcons><Italic /></ToolbarIcons>
               </div>
               <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                <Nav_Icon_Prop><Underline /></Nav_Icon_Prop>
+                <ToolbarIcons><Underline /></ToolbarIcons>
               </div>
               <div className="p-4 rounded-2xl bg-[#E9F0FF] shadow-navDropdownShadow">
                 <div className="flex-generic">
                   <p className="primary-font">Cormorant</p>
                   <div>
-                    <Nav_Icon_Prop><NavArrowDown /></Nav_Icon_Prop>
+                    <ToolbarIcons><NavArrowDown /></ToolbarIcons>
                   </div>
                 </div>
               </div>
               <div className="flex-generic">
                 <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                  <Nav_Icon_Prop><Minus /></Nav_Icon_Prop>
+                  <ToolbarIcons><Minus /></ToolbarIcons>
                 </div>
                 <div>78</div>
                 <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                  <Nav_Icon_Prop><Plus /></Nav_Icon_Prop>
+                  <ToolbarIcons><Plus /></ToolbarIcons>
                 </div>
               </div>
               <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                <Nav_Icon_Prop><AlignLeft /></Nav_Icon_Prop>
+                <ToolbarIcons><AlignLeft /></ToolbarIcons>
               </div>
               <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                <Nav_Icon_Prop><AlignCenter /></Nav_Icon_Prop>
+                <ToolbarIcons><AlignCenter /></ToolbarIcons>
               </div>
               <div className="hover:bg-[#EEF0F2] rounded-full p-2.5">
-                <Nav_Icon_Prop><AlignRight /></Nav_Icon_Prop>
+                <ToolbarIcons><AlignRight /></ToolbarIcons>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ function Nav_Webview() {
           <div className="w-1/5">
             <div className="flex-generic">
               <div>
-                <Nav_Icon_Prop><EditPencil /></Nav_Icon_Prop>
+                <ToolbarIcons><EditPencil /></ToolbarIcons>
               </div>
               <p className="primary-font">Customize</p>
             </div>
