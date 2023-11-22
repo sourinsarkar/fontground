@@ -1,6 +1,5 @@
 import { IconoirProvider } from "iconoir-react";
-
-type ReactNode = string | number | boolean | null | undefined | ReactElement | ReactFragment | ReactPortal;
+import { ReactNode } from 'react'
 
 function Nav_Icon_Prop({children}: { children: ReactNode }) {
   return (
