@@ -1,11 +1,11 @@
-import Nav_Webview from "../navigation/Nav";
+import Nav from "../navigation/Nav";
 
 function Ground() {
   return (
     <>
       <div className="h-screen">
         <div className="h-auto">
-          <Nav_Webview />
+          <Nav />
         </div>
 
         <div className="flex-generic h-4/5">

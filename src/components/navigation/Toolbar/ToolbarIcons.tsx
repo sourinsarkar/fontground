@@ -1,7 +1,7 @@
 import { IconoirProvider } from "iconoir-react";
 import { ReactNode } from 'react'
 
-function Nav_Icon_Prop({children}: { children: ReactNode }) {
+function ToolbarIcons({children}: { children: ReactNode }) {
   return (
     <IconoirProvider
       iconProps={{
@@ -16,4 +16,4 @@ function Nav_Icon_Prop({children}: { children: ReactNode }) {
   );
 }
 
-export default Nav_Icon_Prop
+export default ToolbarIcons
