@@ -12,7 +12,7 @@ import {
   Minus,
   Plus,
 } from "iconoir-react/regular";
-import Nav_Icon_Prop from "./Nav_Icon_Prop";
+import Nav_Icon_Prop from "./Toolbar/ToolbarIcons";
 
 function Nav_Webview() {
   return (

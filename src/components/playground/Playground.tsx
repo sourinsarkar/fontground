@@ -1,4 +1,4 @@
-import Nav_Webview from "./Nav_Webview";
+import Nav_Webview from "../navigation/Nav";
 
 function Ground() {
   return (

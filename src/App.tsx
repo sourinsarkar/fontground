@@ -1,13 +1,12 @@
-import Ground from "./components/navigation/Ground"
-import './App.css'
+import Ground from "./components/playground/Playground";
+import "./App.css";
 
 function App() {
-
   return (
     <>
       <Ground />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
