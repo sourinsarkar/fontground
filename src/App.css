@@ -1,17 +1,6 @@
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-body {
-    overflow: hidden;
-}
-
 .unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
-

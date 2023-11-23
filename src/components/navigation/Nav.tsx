@@ -24,9 +24,9 @@ const Nav: React.FC = () => {
       {/* Customize section */}
       <div className="w-full">
         <div className="flex items-center justify-end">
-          <button className="flex leading-none px-3 py-3.5 bg-teal-100 rounded-lg">
+          <button className="flex items-center justify-center leading-none px-3 py-3.5 bg-teal-100 rounded-lg">
             <i className="ri-pencil-fill mr-2"></i>
-            <div>Customize</div>
+            <div className="text-sm font-medium primary-font">Customize</div>
           </button>
         </div>
       </div>
