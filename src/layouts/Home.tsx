@@ -4,7 +4,9 @@ import Playground from "../components/playground/Playground"
 const Home: React.FC = () => {
     return (
         <div>
-            <div><Nav /></div>
+            <div className="mx-8 py-2">
+                <div><Nav /></div>
+            </div>
             <div><Playground /></div>
         </div>
     );
