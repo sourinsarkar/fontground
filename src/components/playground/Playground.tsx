@@ -1,9 +1,7 @@
-import "remixicon/fonts/remixicon.css"
-
 const xyz: React.FC = () => {
   return (
     <div>
-      
+      <h1></h1>
     </div>
   );
 };
