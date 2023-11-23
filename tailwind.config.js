@@ -9,6 +9,9 @@ export default {
       boxShadow: {
         toolbarDropdownShadow: ['0px 2px 3px 0px rgba(0, 0, 0, 0.25)'],
       },
+      width: {
+        "pg": "calc(100vh - 20%)",
+      }
     },
   },
   plugins: [],

@@ -1,3 +1,5 @@
+import "remixicon/fonts/remixicon.css";
+
 const Toolbar: React.FC = () => {
   return (
     <div className="flex items-center justify-center toolbar-items">
