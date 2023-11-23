@@ -9,6 +9,7 @@ const Nav: React.FC = () => {
       <div className="w-full">
         <div className="flex items-center">
           <img src={Logo} alt="Logo" className="h-6"/>
+          <i className="ri-arrow-down-s-line"></i>
           <div className="">Fontground</div>
         </div>
       </div>

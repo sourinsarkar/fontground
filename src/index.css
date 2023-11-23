@@ -4,7 +4,7 @@
 
 @layer components {
     /* Toolbar specific */
-    .toolbar-items > * {
+    .toolbar-items > i, .toolbar-items > div > i {
         @apply mx-px p-2 leading-none hover:bg-black/10 rounded-full;
     }
 }
