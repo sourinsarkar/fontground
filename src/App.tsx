@@ -1,10 +1,10 @@
-import Playground from "./components/playground/Playground";
 import "./App.css";
+import Home from "./layouts/Home";
 
 function App() {
   return (
     <>
-      <Playground />
+    <Home />
     </>
   );
 }

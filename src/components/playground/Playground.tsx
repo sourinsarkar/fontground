@@ -1,23 +1,5 @@
-import Nav from "../navigation/Nav";
+const Playground: React.FC = () => {
+  return <div></div>;
+};
 
-function Ground() {
-  return (
-    <>
-      <div className="h-screen">
-        <div className="h-auto">
-          <Nav />
-        </div>
-
-        <div className="flex-generic h-4/5">
-          <div>
-            <p>
-              All the world's a stage, and all the men and women merely players.
-            </p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-
-export default Ground;
+export default Playground;

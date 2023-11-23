@@ -1,14 +1,14 @@
 import { IconoirProvider } from "iconoir-react";
 import { ReactNode } from 'react'
 
-function ToolbarIcons({children}: { children: ReactNode }) {
+function ToolbarIcon({children}: { children: ReactNode }) {
   return (
     <IconoirProvider
       iconProps={{
         color: "#000",
-        strokeWidth: 2,
-        width: "0.9em",
-        height: "0.9em",
+        strokeWidth: 1,
+        width: "1em",
+        height: "1em",
       }}
     >
       {children}
@@ -16,4 +16,4 @@ function ToolbarIcons({children}: { children: ReactNode }) {
   );
 }
 
-export default ToolbarIcons
+export default ToolbarIcon
