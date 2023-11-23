@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-    .flex-generic {
-        @apply flex justify-center items-center;
-    }
-
-    .ele-margin > * {
-        @apply mx-0.5;
+    /* Toolbar specific */
+    .toolbar-items > * {
+        @apply mx-px p-2 leading-none hover:bg-black/10 rounded-full;
     }
 }
