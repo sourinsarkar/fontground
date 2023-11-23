@@ -1,5 +1,6 @@
 :root {
     --primary-font: 'PlusJakartaSans-Variable';
+    --sub-font: 'Inter-Variable';
     --mono-font: 'JetBrainsMono-Variable';
 }
 
@@ -30,15 +31,30 @@
 @font-face {
     font-family: 'JetBrainsMono-Variable';
     src: url('../assets/fonts/JetBrains/JetBrainsMono-Variable.woff2') format('woff2'),
-    url('../assets/fonts/JetBrains/JetBrainsMono-Variable.woff') format('woff'),
-    url('../assets/fonts/JetBrains/JetBrainsMono-Variable.ttf') format('truetype');
+        url('../assets/fonts/JetBrains/JetBrainsMono-Variable.woff') format('woff'),
+        url('../assets/fonts/JetBrains/JetBrainsMono-Variable.ttf') format('truetype');
     font-weight: 100 900;
     font-display: swap;
     font-style: normal;
 }
 
+/* Inter */
+
+@font-face {
+    font-family: 'Inter-Variable';
+    src: url('../assets/fonts/Inter/Inter-Variable.woff2') format('woff2'),
+        url('../assets/fonts/Inter/Inter-Variable.woff') format('woff'),
+        url('../assets/fonts/Inter/Inter-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+
+}
+
 .primary-font {
     font-family: var(--primary-font);
+}
+
+.sub-font {
+    font-family: var(--sub-font);
 }
 
 .mono-font {
