@@ -8,9 +8,11 @@ const Nav: React.FC = () => {
       {/* Logo section */}
       <div className="w-full">
         <div className="flex items-center">
-          <img src={Logo} alt="Logo" className="h-6"/>
-          <i className="ri-arrow-down-s-line"></i>
-          <div className="">Fontground</div>
+          <div className="flex items-center leading-none cursor-pointer">
+            <img src={Logo} alt="Logo" className="h-6"/>
+            <i className="ri-arrow-down-s-line mx-px"></i>
+          </div>
+          <div className="mx-2 px-4 py-1 bg-teal-100 rounded-full cursor-pointer mono-font text-sm font-medium">FONTGROUND</div>
         </div>
       </div>
 
@@ -20,10 +22,10 @@ const Nav: React.FC = () => {
       </div>
 
       {/* Customize section */}
-      <div className="  w-full">
+      <div className="w-full">
         <div className="flex items-center justify-end">
-          <button className="flex">
-            <i className="ri-pencil-fill"></i>
+          <button className="flex leading-none px-3 py-3.5 bg-teal-100 rounded-lg">
+            <i className="ri-pencil-fill mr-2"></i>
             <div>Customize</div>
           </button>
         </div>

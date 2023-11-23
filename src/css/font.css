@@ -1,6 +1,9 @@
 :root {
     --primary-font: 'PlusJakartaSans-Variable';
+    --mono-font: 'JetBrainsMono-Variable';
 }
+
+/* PJS */
 
 @font-face {
     font-family: 'PlusJakartaSans-Variable';
@@ -22,6 +25,22 @@
     font-style: italic;
 }
 
+/* JetBrains */
+
+@font-face {
+    font-family: 'JetBrainsMono-Variable';
+    src: url('../assets/fonts/JetBrains/JetBrainsMono-Variable.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains/JetBrainsMono-Variable.woff') format('woff'),
+    url('../assets/fonts/JetBrains/JetBrainsMono-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+
 .primary-font {
     font-family: var(--primary-font);
+}
+
+.mono-font {
+    font-family: var(--mono-font);
 }
