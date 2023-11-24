@@ -3,8 +3,8 @@ import Logo from "/images/sourin-icon.svg";
 
 const Nav: React.FC = () => {
   return (
-    <div className="flex items-center">
-      
+    <div className="flex items-center bg-white/25 shadow-lg shadow-white/25 px-8 py-2">
+
       {/* Logo section */}
       <div className="w-full">
         <div className="flex items-center">
@@ -24,7 +24,7 @@ const Nav: React.FC = () => {
       {/* Customize section */}
       <div className="w-full">
         <div className="flex items-center justify-end">
-          <button className="flex items-center justify-center leading-none px-3 py-3.5 bg-teal-100 rounded-lg">
+          <button className="flex items-center justify-center leading-none px-3 py-3.5 bg-teal-100 rounded-2xl shadow-shdw-1">
             <i className="ri-pencil-fill mr-2"></i>
             <div className="text-sm font-medium primary-font">Customize</div>
           </button>

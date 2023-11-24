@@ -1,4 +1,4 @@
-const xyz: React.FC = () => {
+const Playground: React.FC = () => {
   return (
     <div className="flex items-center justify-center w-1/2">
       <h1 className="sub-font">All the world's a stage, and all the men and women merely players.</h1>
@@ -6,4 +6,4 @@ const xyz: React.FC = () => {
   );
 };
 
-export default xyz;
+export default Playground;

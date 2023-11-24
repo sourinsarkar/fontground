@@ -8,7 +8,7 @@ const Toolbar: React.FC = () => {
         <i className="ri-italic ri-sm"></i>
         <i className="ri-underline ri-sm"></i>
 
-        <button className="flex items-center justify-center mx-2 p-5 bg-teal-100 rounded-2xl shadow-toolbarDropdownShadow leading-none gap-1">
+        <button className="flex items-center justify-center mx-2 p-5 bg-teal-100 rounded-2xl shadow-shdw-1 leading-none gap-1">
             <div className="primary-font text-sm font-medium">Cormorant</div>
             <i className="ri-arrow-down-s-line ri-sm"></i>
         </button>
