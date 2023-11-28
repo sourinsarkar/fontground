@@ -15,7 +15,7 @@ const Toolbar: React.FC = () => {
 
         <div className="flex items-center justify-center mx-px">
             <i className="ri-add-line ri-sm"></i>
-            <div className="bg-teal-100 leading-none p-1.5 rounded-md unselectable text-sm font-medium primary-font">40</div>
+            <div className="bg-teal-100 leading-none p-1.5 rounded-md unselectable text-sm font-medium primary-font">24</div>
             <i className="ri-subtract-line ri-sm"></i>
         </div>
 

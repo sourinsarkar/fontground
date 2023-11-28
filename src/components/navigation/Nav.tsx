@@ -3,7 +3,7 @@ import Logo from "/images/sourin-icon.svg";
 
 const Nav: React.FC = () => {
   return (
-    <div className="flex items-center bg-white/25 shadow-lg shadow-white/25 px-8 py-2">
+    <div className="flex items-center bg-white/10 shadow-lg shadow-white/10 px-8 py-2">
 
       {/* Logo section */}
       <div className="w-full">
