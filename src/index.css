@@ -10,7 +10,7 @@
 }
 
 :root {
-    --primary-font: 'PlusJakartaSans-Variable';
+    --primary-font: 'PJS';
     --sub-font: 'Inter-Variable';
     --mono-font: 'JetBrainsMono-Variable';
 }
@@ -18,32 +18,22 @@
 /* PJS */
 
 @font-face {
-    font-family: 'PlusJakartaSans-Variable';
-    src: url('../assets/fonts/PJS/PlusJakartaSans-Variable.woff2') format('woff2'),
-        url('../assets/fonts/PJS/PlusJakartaSans-Variable.woff') format('woff'),
-        url('../assets/fonts/PJS/PlusJakartaSans-Variable.ttf') format('truetype');
+    font-family: 'PJS';
+    src: url('/fonts/PJS/PlusJakartaSans-Variable.woff2') format('woff2'),
+        url('/fonts/PJS/PlusJakartaSans-Variable.woff') format('woff'),
+        url('/fonts/PJS/PlusJakartaSans-Variable.ttf') format('truetype');
     font-weight: 200 800;
     font-display: swap;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'PlusJakartaSans-VariableItalic';
-    src: url('../assets/fonts/PJS/PlusJakartaSans-VariableItalic.woff2') format('woff2'),
-        url('../assets/fonts/PJS/PlusJakartaSans-VariableItalic.woff') format('woff'),
-        url('../assets/fonts/PJS/PlusJakartaSans-VariableItalic.ttf') format('truetype');
-    font-weight: 200 800;
-    font-display: swap;
-    font-style: italic;
 }
 
 /* JetBrains */
 
 @font-face {
     font-family: 'JetBrainsMono-Variable';
-    src: url('../assets/fonts/JetBrains/JetBrainsMono-Variable.woff2') format('woff2'),
-        url('../assets/fonts/JetBrains/JetBrainsMono-Variable.woff') format('woff'),
-        url('../assets/fonts/JetBrains/JetBrainsMono-Variable.ttf') format('truetype');
+    src: url('/fonts/JetBrains/JetBrainsMono-Variable.woff2') format('woff2'),
+        url('/fonts/JetBrains/JetBrainsMono-Variable.woff') format('woff'),
+        url('/fonts/JetBrains/JetBrainsMono-Variable.ttf') format('truetype');
     font-weight: 100 900;
     font-display: swap;
     font-style: normal;
@@ -53,9 +43,9 @@
 
 @font-face {
     font-family: 'Inter-Variable';
-    src: url('../assets/fonts/Inter/Inter-Variable.woff2') format('woff2'),
-        url('../assets/fonts/Inter/Inter-Variable.woff') format('woff'),
-        url('../assets/fonts/Inter/Inter-Variable.ttf') format('truetype');
+    src: url('/fonts/Inter/Inter-Variable.woff2') format('woff2'),
+        url('/fonts/Inter/Inter-Variable.woff') format('woff'),
+        url('/fonts/Inter/Inter-Variable.ttf') format('truetype');
     font-weight: 100 900;
 
 }
