@@ -4,4 +4,4 @@ const Playground: React.FC = () => {
   );
 };
 
-export default Playground;
+export default Playground
