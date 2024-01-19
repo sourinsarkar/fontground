@@ -1,8 +1,10 @@
+import { useContext } from "react";
 import "remixicon/fonts/remixicon.css";
-import useFontSize from "../customHooks/useFontSize";
+import FontSizeContext from "../contexts/FontSizeContext";
 
 const Toolbar: React.FC = () => {
-  const { fontSize, increaseFontSize, decreaseFontSize } = useFontSize(16);
+  const { fontSize, increaseFontSize, decreaseFontSize } = useContext(FontSizeContext);
+
   return (
     <div className="flex items-center justify-center toolbar-items">
         <i className="ri-font-color ri-sm"></i>
