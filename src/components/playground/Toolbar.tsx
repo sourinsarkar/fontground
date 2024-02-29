@@ -1,6 +1,6 @@
 import React from "react";
 import "remixicon/fonts/remixicon.css";
-import FontSizeContext from "../contexts/FontSizeContext";
+import FontSizeContext from "../context/FontSizeContext";
 
 const Toolbar: React.FC = () => {
   const { fontSize, increaseFontSize, decreaseFontSize } = React.useContext(FontSizeContext);

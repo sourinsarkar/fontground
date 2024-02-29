@@ -1,4 +1,4 @@
-import Nav from "../components/navigation/Nav"
+import Nav from "../components/playground/Nav"
 import Playground from "../components/playground/Playground"
 
 const Home: React.FC = () => {

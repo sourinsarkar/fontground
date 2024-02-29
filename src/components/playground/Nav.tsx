@@ -1,4 +1,4 @@
-import Toolbar from "../Toolbar/Toolbar";
+import Toolbar from "./Toolbar";
 import Logo from "/images/sourin-icon.svg";
 
 const Nav: React.FC = () => {

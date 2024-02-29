@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import FontSizeContext from "../contexts/FontSizeContext";
+import FontSizeContext from "../context/FontSizeContext";
 
 const Playground: React.FC = () => {
   const { fontSize } = useContext(FontSizeContext);
