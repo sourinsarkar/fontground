@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import React from "react";
 import "remixicon/fonts/remixicon.css";
 import FontSizeContext from "../contexts/FontSizeContext";
 
 const Toolbar: React.FC = () => {
-  const { fontSize, increaseFontSize, decreaseFontSize } = useContext(FontSizeContext);
+  const { fontSize, increaseFontSize, decreaseFontSize } = React.useContext(FontSizeContext);
 
   return (
     <div className="flex items-center justify-center toolbar-items">
