@@ -1,9 +1,7 @@
 import React from "react";
 import "remixicon/fonts/remixicon.css";
-import FontSizeContext from "../context/FontSizeContext";
 
 const Toolbar: React.FC = () => {
-  const { fontSize, increaseFontSize, decreaseFontSize } = React.useContext(FontSizeContext);
 
   return (
     <div className="flex items-center justify-center toolbar-items">
@@ -18,9 +16,9 @@ const Toolbar: React.FC = () => {
         </button>
 
         <div className="flex items-center justify-center mx-px">
-            <i onClick={increaseFontSize} className="ri-add-line ri-sm"></i>
-            <div className="bg-teal-100 leading-none p-1.5 rounded-md unselectable text-sm font-medium primary-font">{fontSize}</div>
-            <i onClick={decreaseFontSize} className="ri-subtract-line ri-sm"></i>
+            <i className="ri-add-line ri-sm"></i>
+            <div className="bg-teal-100 leading-none p-1.5 rounded-md unselectable text-sm font-medium primary-font">16</div>
+            <i className="ri-subtract-line ri-sm"></i>
         </div>
 
         <i className="ri-align-left ri-sm"></i>
