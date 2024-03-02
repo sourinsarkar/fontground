@@ -6,7 +6,7 @@ interface fontSizeState {
 }
 
 const initialState: fontSizeState = {
-    value: 0,
+    value: 16,
 }
 
 export const fontSize = createSlice({
