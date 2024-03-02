@@ -1,6 +1,8 @@
 import React from "react";
 import "remixicon/fonts/remixicon.css";
-import { increment, decrement } from "../slices/font/fontSize";
+import { increment, decrement } from "../slices/font/size";
+import { toggleBold } from "../slices/font/bold";
+import { toggleItalic } from "../slices/font/italic";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
 
@@ -12,8 +14,8 @@ const Toolbar: React.FC = () => {
   return (
     <div className="flex items-center justify-center toolbar-items">
         <i className="ri-font-color ri-sm"></i>
-        <i className="ri-bold ri-sm"></i>
-        <i className="ri-italic ri-sm"></i>
+        <i className="ri-bold ri-sm" onClick={() => dispatch(toggleBold())}></i>
+        <i className="ri-italic ri-sm" onClick={() => dispatch(toggleItalic())}></i>
         <i className="ri-underline ri-sm"></i>
 
         <button className="flex items-center justify-center mx-2 p-5 bg-teal-100 rounded-2xl shadow-shdw-1 leading-none gap-1">
