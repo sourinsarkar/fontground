@@ -5,7 +5,7 @@ const Home: React.FC = () => {
     return (
         <div className="h-screen flex flex-col bg-pg-grid">
             <div><Nav /></div>
-            <div className="flex items-center justify-center grow"><Playground /></div>
+            <div className="flex items-center h-full "><Playground /></div>
         </div>
     );
 }

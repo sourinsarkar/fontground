@@ -9,15 +9,17 @@ const Playground: React.FC = () => {
   const toAlign = useSelector((state: RootState) => state.textAlign.value);
 
   return (
-    <h1 className="sub-font"
-    style={{ fontSize:`${fontSize}px`,
-             fontWeight: toBold ? "bold" : "normal",
-             fontStyle: toItalic ? "italic" : "normal",
-             textDecoration: toUnderline ? "underline" : "none",
-             textAlign: `${toAlign}`,
-             }}
-             >
-              All the world's a stage, and all the men and women merely players.</h1>
+    <div>
+      <h1 className="sub-font"
+      style={{ fontSize:`${fontSize}px`,
+              fontWeight: toBold ? "bold" : "normal",
+              fontStyle: toItalic ? "italic" : "normal",
+              textDecoration: toUnderline ? "underline" : "none",
+              textAlign: `${toAlign}`,
+              }}
+              >
+                All the world's a stage, and all the men and women merely players.</h1>
+    </div>
   );
 };
 
