@@ -6,11 +6,12 @@ import { toggleItalic } from "../slices/font/italic";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
 import { toggleUnderline } from "../slices/font/underline";
-import { alignLeft, alignCenter, alignRight } from "../slices/font/textAlign"
+import { alignLeft, alignCenter, alignRight } from "../slices/font/textAlign";
 
 const Toolbar: React.FC = () => {
   const fontSize = useSelector((state: RootState) => state.fontSize.value);
   const dispatch = useDispatch();
+
 
   return (
     <div className="flex items-center justify-center toolbar-items">
