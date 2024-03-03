@@ -3,6 +3,7 @@ import FontSizeReducer from "../slices/font/size"
 import BoldReducer from "../slices/font/bold"
 import ItalicReducer from "../slices/font/italic"
 import UnderlineReducer from "../slices/font/underline"
+import TextAlignReducer from "../slices/font/textAlign"
 
 export const store = configureStore({
     reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
         bold: BoldReducer,
         italic: ItalicReducer,
         underline: UnderlineReducer,
+        textAlign: TextAlignReducer,
     },
 })
 
