@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "remixicon/fonts/remixicon.css";
-import { increment, decrement } from "../slices/font/size";
+import { increment, decrement } from "../slices/font/fontSize";
 import { toggleBold } from "../slices/font/bold";
 import { toggleItalic } from "../slices/font/italic";
-import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../store/store";
 import { toggleUnderline } from "../slices/font/underline";
 import { alignLeft, alignCenter, alignRight } from "../slices/font/textAlign";
+import { setColor } from "../slices/font/fontColor";
+import { HexColorPicker } from "react-colorful";
 
 const Toolbar: React.FC = () => {
   const fontSize = useSelector((state: RootState) => state.fontSize.value);
   const dispatch = useDispatch();
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [fontColor, setFontColor] = useState("#0055ff");
+
+  const handleFontColorChange = (newColor: string) => {
+    setFontColor(newColor);
+    dispatch(setColor(newColor));
+  }
 
   return (
     <div className="flex items-center justify-center toolbar-items">
-        <i className="ri-font-color ri-sm"></i>
+        <i className="ri-font-color ri-sm" onClick={() => setIsOpen(!isOpen)}></i>
+        {isOpen && <HexColorPicker color={fontColor} onChange={handleFontColorChange} />}
         <i className="ri-bold ri-sm" onClick={() => dispatch(toggleBold())}></i>
         <i className="ri-italic ri-sm" onClick={() => dispatch(toggleItalic())}></i>
         <i className="ri-underline ri-sm" onClick={() => dispatch(toggleUnderline())}></i>

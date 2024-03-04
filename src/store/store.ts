@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import FontSizeReducer from "../slices/font/size"
+import FontSizeReducer from "../slices/font/fontSize"
 import BoldReducer from "../slices/font/bold"
 import ItalicReducer from "../slices/font/italic"
 import UnderlineReducer from "../slices/font/underline"
 import TextAlignReducer from "../slices/font/textAlign"
+import FontColorReducer from "../slices/font/fontColor"
 
 export const store = configureStore({
     reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
         italic: ItalicReducer,
         underline: UnderlineReducer,
         textAlign: TextAlignReducer,
+        fontColor: FontColorReducer,
     },
 })
 

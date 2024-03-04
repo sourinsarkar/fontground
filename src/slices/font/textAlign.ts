@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-type TextAlignState = {
+type textAlignState = {
   value: "left" | "center" | "right";
 };
 
-const initialState: TextAlignState = { value: "center" };
+const initialState: textAlignState = { value: "center" };
 
 export const textAlign = createSlice({
   name: "textAlign",
