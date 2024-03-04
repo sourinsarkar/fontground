@@ -12,20 +12,24 @@ import { HexColorPicker } from "react-colorful";
 
 const Toolbar: React.FC = () => {
   const fontSize = useSelector((state: RootState) => state.fontSize.value);
+  const fontColor = useSelector((state: RootState) => state.fontColor.value);
   const dispatch = useDispatch();
 
   const [isOpen, setIsOpen] = useState(false);
-  const [fontColor, setFontColor] = useState("#0055ff");
 
   const handleFontColorChange = (newColor: string) => {
-    setFontColor(newColor);
     dispatch(setColor(newColor));
   }
 
   return (
     <div className="flex items-center justify-center toolbar-items">
-        <i className="ri-font-color ri-sm" onClick={() => setIsOpen(!isOpen)}></i>
-        {isOpen && <HexColorPicker color={fontColor} onChange={handleFontColorChange} />}
+        <i className="ri-font-color ri-sm relaive" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen && (
+            <div className="absolute top-20">
+              <HexColorPicker color={fontColor} onChange={handleFontColorChange} />
+            </div>
+          )}
+        </i>
         <i className="ri-bold ri-sm" onClick={() => dispatch(toggleBold())}></i>
         <i className="ri-italic ri-sm" onClick={() => dispatch(toggleItalic())}></i>
         <i className="ri-underline ri-sm" onClick={() => dispatch(toggleUnderline())}></i>

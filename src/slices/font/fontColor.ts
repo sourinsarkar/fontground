@@ -5,7 +5,7 @@ interface fontColorState {
   value: string;
 }
 
-const initialState: fontColorState = { value: "#0055ff" };
+const initialState: fontColorState = { value: "#27282C" };
 
 export const fontColor = createSlice({
   name: "fontColor",
