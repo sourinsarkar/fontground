@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "remixicon/fonts/remixicon.css";
+import { HexColorPicker } from "react-colorful";
 import { increment, decrement } from "../slices/font/fontSize";
 import { toggleBold } from "../slices/font/bold";
 import { toggleItalic } from "../slices/font/italic";
@@ -8,7 +9,9 @@ import { RootState } from "../store/store";
 import { toggleUnderline } from "../slices/font/underline";
 import { alignLeft, alignCenter, alignRight } from "../slices/font/textAlign";
 import { setColor } from "../slices/font/fontColor";
-import { HexColorPicker } from "react-colorful";
+import { setFont } from "../slices/font/fontUnique";
+
+const allFonts = ['Arial', 'Helvetica', 'Times New Roman', 'Courier New', 'Inter'];
 
 const Toolbar: React.FC = () => {
   const fontSize = useSelector((state: RootState) => state.fontSize.value);
@@ -16,9 +19,15 @@ const Toolbar: React.FC = () => {
   const dispatch = useDispatch();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenFontList, setIsOpenFontList] = useState(false);
 
   const handleFontColorChange = (newColor: string) => {
     dispatch(setColor(newColor));
+  }
+
+  const handleFontChange = (event: any) => {
+    const selectedFont = event.currentTarget.textContent;
+    dispatch(setFont(selectedFont));
   }
 
   return (
@@ -34,13 +43,15 @@ const Toolbar: React.FC = () => {
         <i className="ri-italic ri-sm" onClick={() => dispatch(toggleItalic())}></i>
         <i className="ri-underline ri-sm" onClick={() => dispatch(toggleUnderline())}></i>
 
-        <button className="flex items-center justify-center mx-2 p-5 bg-teal-100 rounded-2xl shadow-shdw-1 leading-none gap-1">
+        <button onClick={() => setIsOpenFontList(!isOpenFontList)} className="relative flex items-center justify-center mx-2 p-5 bg-teal-100 rounded-2xl shadow-shdw-1 leading-none gap-1">
             <div className="primary-font text-sm font-medium">Cormorant</div>
             <i className="ri-arrow-down-s-line ri-sm"></i>
-            {isOpen && (
+            {isOpenFontList && (
               <div className="absolute top-20">
                 <ul>
-                  <li></li>
+                  {allFonts.map((font) => (
+                    <li onClick={handleFontChange}>{font}</li>
+                  ))}
                 </ul>
               </div>
             )}

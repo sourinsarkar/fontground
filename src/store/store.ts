@@ -5,6 +5,7 @@ import ItalicReducer from "../slices/font/italic"
 import UnderlineReducer from "../slices/font/underline"
 import TextAlignReducer from "../slices/font/textAlign"
 import FontColorReducer from "../slices/font/fontColor"
+import FontUniqueReducer from "../slices/font/fontUnique"
 
 export const store = configureStore({
     reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
         underline: UnderlineReducer,
         textAlign: TextAlignReducer,
         fontColor: FontColorReducer,
+        fontUnique: FontUniqueReducer,
     },
 })
 
