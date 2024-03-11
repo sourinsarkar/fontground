@@ -1,21 +1,12 @@
 import { useState } from "react";
 import Toolbar from "./Toolbar";
 import Logo from "/images/sourin-icon.svg";
-import { Picture1, Picture2, Picture3 } from "../utils/images";
-import { useDispatch } from "react-redux";
-import { pageBg } from "../slices/font/pageBackground";
-
-const allImages = [Picture1, Picture2, Picture3];
+// import { useDispatch } from "react-redux";
   
 const Nav: React.FC = () => {
-  const dispatch = useDispatch();
+//   const dispatch = useDispatch();
   
   const [isOpen, setIsOpen] = useState(false);
-
-  const handlePageBackgroundChange = (event: any) => {
-    const newBackground = event;
-    dispatch(pageBg(newBackground));
-  }
 
   return (
     <div className="flex items-center bg-white/10 shadow-lg shadow-white/10 px-8 py-2">
@@ -45,11 +36,11 @@ const Nav: React.FC = () => {
             {isOpen && (
               <div className="absolute top-20">
                 <ul>
-                  {allImages.map((image) => (
+                  {/* {allImages.map((image) => (
                     <li>
                       <div className="w-20 h-20" onClick={handlePageBackgroundChange}>{image}</div>
                     </li>
-                  ))}
+                  ))} */}
                 </ul>
               </div>
             )}
