@@ -8,7 +8,7 @@ interface fontUniqueState {
 const initialState: fontUniqueState = {value: "Arial"}
 
 export const fontUnique = createSlice({
-    name: "fontUnique",
+    name: "fontUnique", 
     initialState,
     reducers: {
         setFont: (state, action: PayloadAction<String>) => {

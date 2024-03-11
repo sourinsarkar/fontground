@@ -6,6 +6,7 @@ import UnderlineReducer from "../slices/font/underline"
 import TextAlignReducer from "../slices/font/textAlign"
 import FontColorReducer from "../slices/font/fontColor"
 import FontUniqueReducer from "../slices/font/fontUnique"
+import PageBackgroundReducer from "../slices/font/pageBackground";
 
 export const store = configureStore({
     reducer: {
@@ -16,6 +17,7 @@ export const store = configureStore({
         textAlign: TextAlignReducer,
         fontColor: FontColorReducer,
         fontUnique: FontUniqueReducer,
+        pageBackground: PageBackgroundReducer,
     },
 })
 
